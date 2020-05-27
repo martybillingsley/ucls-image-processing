@@ -1,6 +1,12 @@
 # Final Assignment: Image Processing
 See the packet for the assignment
 
+
+# How to Run Your Program
+In the bottom window, type
+python funcs.py
+
+
 # Function Reference
 
 **makePicture (filename)**<br>			
