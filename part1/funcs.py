@@ -1,8 +1,13 @@
 from imageFunctions import *
 
+def drawRedLine():
+    for x in range(getWidth(img)):
+        setRed(img, x, 100, 255)
+        setGreen(img, x, 100, 0)
+        setBlue(img, x, 100, 0)
+
+
 img = makePicture('bear.jpg')
 pixels = img.load()
-setRed(img, 100, 100, 150)
-setGreen(img, 100, 100, 0)
-setBlue(img, 100, 100, 255)
+drawRedLine()
 show(img)
