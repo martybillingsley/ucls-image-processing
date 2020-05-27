@@ -3,7 +3,7 @@ See the packet for the assignment
 
 
 # How to Run Your Program
-In the bottom window, type
+In the bottom window, type<br>
 python funcs.py
 
 
