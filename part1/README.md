@@ -4,7 +4,7 @@ See the packet for the assignment
 
 # How to Edit and Run Your Program
 1) Choose the tab named *funcs.py*.<br>
-2) Make changes to your program. >br?
+2) Make changes to your program. <br>
 3) In the bottom (terminal) window, type *python funcs.py*
 
 
