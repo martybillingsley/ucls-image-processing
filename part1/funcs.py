@@ -1,8 +1,8 @@
-from imgFunctions import *
+from imageFunctions import *
 
-img = makePicture('flower.jpg')
+img = makePicture('bear.jpg')
 pixels = img.load()
-for y in range(getHeight(img)):
-    for x in range(getWidth(img)):
-        setRed(img,x,y,0)
+setRed(img, 100, 100, 150)
+setGreen(img, 100, 100, 0)
+setBlue(img, 100, 100, 255)
 show(img)
