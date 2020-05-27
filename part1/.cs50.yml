@@ -6,3 +6,6 @@ lab50:
     - x
   files:
     - !include funcs.py
+    - !include bear.jpg
+    - !include flower.jpg
+    - !include dog.jpg
