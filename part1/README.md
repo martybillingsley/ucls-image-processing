@@ -1,14 +1,46 @@
-# Digital Image Processing
-A picture is stored on the computer as a series of numbers -- numbers indicating variations of red, green, and blue at different locations on a grid of pixels. 
+# Final Assignment: Image Processing
+See the packet for the assignment
 
-## Pixels
-Take a picture and lay a grid of squares over it. Each of the squares is a pixel. To store the picture, the computer records a number to represent the color of each square (sort of like a digital color-by-number). The more squares in the grid, the better the image will look.
+# Function Reference
 
-A *pixel* (short for *picture element*) is a tiny square of color. Lots of pixels together form an image.
-![Pixels](https://raw.githubusercontent.com/martybillingsley/images/master/fishGrid.jpg) <br>
+**makePicture (filename)**			
+Returns a Picture representation of the contents of the file. Use the files provided ("bear.jpg", "dog.jpg", "flower.jpg", etc.)
+Example:	img = makePicture("dog.jpg")
 
-## Colors
-An RGB pixel is made of three numbers, each between 0 and 255. The numbers are always in this order: red, green, blue. They can be combined to make over 16 million colors. (digital color playground) Think of a pixel as three flashlights shining in your eyes: one red, one green, and one blue. If the lights are off (0,0,0), the color is black. If the lights are all on full-strength (255,255,255), the color is white.
+**makeEmptyPicture (w, h c)**	
+Returns a Picture with the given width and height, filled with color c. 
+Example:	img = makeEmptyPicture(640, 480, 'red')
+Example:	img = makeEmptyPicture(640, 480, (255, 0, 0))
+
+**show (img)**	
+Displays the specified Picture in its own window 
+Example:	show(img)
+
+		
+**getWidth (img)**	
+**getHeight (img)** 	
+Returns the width or height of the specified Picture. 
+Examples:	w = getWidth(img)
+		      h = getHeight(img)
 
 
+**getRed (img, x, y)**	
+**getGreen (img, x, y)**	
+**getBlue (img, x, y)**
+Returns the amount of red or green or blue of the pixel at location x,y of the image.
+Example: 	r = getRed(img, 100, 100)
 
+**getColor (img, x y)**	
+Returns a three-tuple with the red, green, and blue of pixel at location x,y of the image.
+Example: 	r,g,b = getColor(img, 100, 100)
+
+**setRed (img, x, y, amount)**
+**setGreen (img, x, y, amount)**	
+**setBlue (img, x, y, amount)**	
+Sets the amount of red or green or blue of pixel at location x,y of the image.
+Examples: 	setRed(img, 100, 100, 255)
+            setBlue(img, 100, 100, 0)
+
+**setColor (img, x, y, r, g, b)**	
+Sets the color of pixel at location x,y of the image, given the red, green, and blue
+Example: 	setColor(img, 100 100, 255, 0, 255)
